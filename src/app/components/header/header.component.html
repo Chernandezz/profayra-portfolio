@@ -1,19 +1,33 @@
-<header class="navbar navbar-expand-lg">
+<header class="header">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="/assets/images/profayra.png" alt="Profayra Logo" class="logo me-2">
-      <span>PROFAYRA</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" routerLink="/">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/monitorias">Precios</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/blog">Proyectos</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/contacto">Idioma</a></li>
-      </ul>
-    </div>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="/assets/images/profayra.png" alt="Profayra Logo" class="logo me-2">
+        <span>PROFAYRA</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" routerLink="/" routerLinkActive="active">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/monitorias" routerLinkActive="active">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/blog" routerLinkActive="active">Proyectos</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Idioma
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Español</a></li>
+              <li><a class="dropdown-item" href="#">English</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-light" routerLink="/contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 </header>
