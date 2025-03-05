@@ -56,3 +56,62 @@
   background-color: #5300cc;
   box-shadow: 0px 6px 14px rgba(83, 0, 204, 0.6);
 }
+
+.plans-section {
+  padding: 3rem 0;
+}
+
+.plan-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.plan-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.plan-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background-color: #6e00ff;
+  border: none;
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(110, 0, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #5300cc;
+  box-shadow: 0px 6px 14px rgba(83, 0, 204, 0.6);
+}
+
+.btn-outline-light {
+  color: white;
+  border: 2px solid white;
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: #181818;
+}
+
+@media (max-width: 768px) {
+  .plan-title {
+    font-size: 1.5rem;
+  }
+  .plan-description {
+    font-size: 1rem;
+  }
+}
