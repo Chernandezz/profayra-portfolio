@@ -1,0 +1,32 @@
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  padding: 15px 0;
+  background: transparent !important; // ✅ Removes background, blends with banner
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white !important; // ✅ Ensures text is visible
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  color: white !important; // ✅ Makes navigation text white
+  &:hover {
+    color: #6e00ff !important;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: white; // ✅ Makes the menu icon visible in mobile
+}
