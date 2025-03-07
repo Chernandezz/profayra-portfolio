@@ -16,7 +16,7 @@ export class ProjectsComponent {
       name: 'Cafena',
       description:
         'Servicio RESTful para transformación y análisis de grandes volúmenes de datos con autenticación OAuth.',
-      imageUrl: 'assets/projects/cafena.png',
+      imageUrl: 'assets/projects/cafena.webp',
       technologies: ['Python', 'FastAPI', 'PostgreSQL', 'Redis'],
       projectLink: 'https://coffe-shop-ch.netlify.app/',
       githubLink: '',
@@ -26,7 +26,7 @@ export class ProjectsComponent {
       name: 'Copa America USA 2024',
       description:
         'Panel de administración completo para tiendas online con análisis de ventas y gestión de inventario.',
-      imageUrl: 'assets/projects/copaAmerica.png',
+      imageUrl: 'assets/projects/copaAmerica.webp',
       technologies: ['Angular', 'Node.js', 'MongoDB', 'Express'],
       projectLink: 'https://thunderous-granita-9d371d.netlify.app/',
       githubLink: '',
@@ -36,7 +36,7 @@ export class ProjectsComponent {
       name: 'Lollapalooza',
       description:
         'Aplicación para seguimiento de gastos, presupuestos y visualización de hábitos financieros personales.',
-      imageUrl: 'assets/projects/lollapalooza.png',
+      imageUrl: 'assets/projects/lollapalooza.webp',
       technologies: ['React', 'Firebase', 'Chart.js', 'Material UI'],
       projectLink: 'https://serene-daifuku-9ef7b4.netlify.app/',
       githubLink: '',
@@ -46,7 +46,7 @@ export class ProjectsComponent {
       name: 'Blog de café',
       description:
         'Herramienta para tomar notas en tiempo real con opciones de colaboración y organización avanzada.',
-      imageUrl: 'assets/projects/blogDeCafe.png',
+      imageUrl: 'assets/projects/blogDeCafe.webp',
       technologies: ['React', 'Socket.io', 'Express', 'MongoDB'],
       projectLink: 'https://blogdecafe-ch.netlify.app/',
       githubLink: '',
@@ -56,7 +56,7 @@ export class ProjectsComponent {
       name: 'Algoritmo genético en la web',
       description:
         'Plataforma para administración de cursos, estudiantes y calificaciones con módulos de comunicación.',
-      imageUrl: 'assets/projects/geneticAlgorithm.png',
+      imageUrl: 'assets/projects/geneticAlgorithm.webp',
       technologies: ['Vue.js', 'Laravel', 'MySQL', 'Tailwind CSS'],
       projectLink: 'https://algoritmogeneticounal.netlify.app/genetico',
       githubLink: 'https://github.com/profayra/education-management',
@@ -66,7 +66,7 @@ export class ProjectsComponent {
       name: 'The movieauro',
       description:
         'Sistema para organización y gestión de conferencias virtuales con salas interactivas y networking.',
-      imageUrl: 'assets/projects/theMovieauro.png',
+      imageUrl: 'assets/projects/theMovieauro.webp',
       technologies: ['Angular', 'WebRTC', 'Node.js', 'Firebase'],
       projectLink: 'https://trabajo-final-kekh.vercel.app/',
       githubLink: 'https://github.com/profayra/virtual-events-platform',
@@ -76,7 +76,7 @@ export class ProjectsComponent {
       name: 'Rock EDM festival',
       description:
         'Aplicación móvil para seguimiento de entrenamientos, nutrición y progreso físico.',
-      imageUrl: 'assets/projects/rockFestival.png',
+      imageUrl: 'assets/projects/rockFestival.webp',
       technologies: ['React Native', 'Redux', 'Firebase', 'GraphQL'],
       projectLink: 'https://glittering-moonbeam-4893f4.netlify.app/',
       githubLink: 'https://github.com/profayra/fitness-app',
@@ -86,7 +86,7 @@ export class ProjectsComponent {
       name: 'Otros proyectos',
       description:
         'Herramienta para gestión de proyectos con metodologías ágiles, tableros Kanban y seguimiento de sprints.',
-      imageUrl: 'assets/projects/github.png',
+      imageUrl: 'assets/projects/github.webp',
       technologies: [],
       projectLink: '',
       githubLink: 'https://github.com/Chernandezz?tab=repositories',
