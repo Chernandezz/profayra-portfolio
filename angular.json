@@ -30,7 +30,6 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/profayra-portfolio/",
               "budgets": [
                 {
                   "type": "initial",
@@ -46,7 +45,6 @@
               "outputHashing": "all"
             },
             "development": {
-              "baseHref": "/",
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
