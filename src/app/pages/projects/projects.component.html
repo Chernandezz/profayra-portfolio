@@ -1,0 +1,50 @@
+<section class="container projects-section">
+  <h2 class="section-title text-center mb-5 fw-bold">Portafolio de Proyectos</h2>
+  <p class="section-description text-center mb-5">Descubre nuestra colección de proyectos desarrollados con las últimas
+    tecnologías</p>
+
+  <!-- Filtro de proyectos (opcional) -->
+  <div class="filters-container text-center mb-4">
+    <button class="filter-btn active">Todos</button>
+    <button class="filter-btn">Web</button>
+    <button class="filter-btn">Mobile</button>
+    <button class="filter-btn">API</button>
+  </div>
+
+  <!-- Grid de Proyectos -->
+  <div class="projects-grid">
+    <div class="project-card" *ngFor="let project of projects">
+      <div class="project-image">
+        <img [src]="project.imageUrl" [alt]="project.name" onerror="this.src='assets/banner.png'">
+        <div class="project-overlay">
+          <div class="project-links">
+            <a [href]="project.projectLink" target="_blank" class="project-link">
+              <i class="fas fa-external-link-alt"></i> Ver Proyecto
+            </a>
+            <a [href]="project.githubLink" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">{{ project.name }}</h3>
+        <p class="project-description">{{ project.description }}</p>
+        <div class="project-tech">
+          <span class="tech-tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>¿Tienes un proyecto en mente?</h2>
+      <p>Trabajemos juntos para convertir tus ideas en soluciones digitales efectivas.</p>
+      <button class="btn btn-primary mt-4 px-5 py-3">Contáctanos</button>
+    </div>
+  </div>
+</section>
