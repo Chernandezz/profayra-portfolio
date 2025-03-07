@@ -125,8 +125,17 @@
   flex-direction: column;
 }
 
+.service-price {
+  font-size: 1.1rem;
+  color: #333;
+  background-color: rgba(110, 0, 255, 0.05);
+  padding: 8px 12px;
+  border-radius: 6px;
+  border-left: 3px solid #6e00ff;
+}
+
 .service-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(110, 0, 255, 0.2);
 }
 
