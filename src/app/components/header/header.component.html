@@ -1,7 +1,7 @@
 <header class="header" [ngClass]="{'header-dark': isProjectsPage()}">
   <div class="container">
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" routerLink="/">
         <img src="assets/profayra.png" alt="Profayra Logo" class="logo me-2">
         <span>PROFAYRA</span>
       </a>
@@ -12,18 +12,8 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" routerLink="/" routerLinkActive="active"
               [routerLinkActiveOptions]="{exact: true}">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="/monitorias" routerLinkActive="active">Precios</a></li>
           <li class="nav-item"><a class="nav-link" routerLink="/projects" routerLinkActive="active">Proyectos</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Idioma
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Español</a></li>
-              <li><a class="dropdown-item" href="#">English</a></li>
-            </ul>
-          </li>
+          <li class="nav-item"><a class="nav-link" routerLink="/monitorias" routerLinkActive="active">Precios</a></li>
           <li class="nav-item">
             <a class="btn btn-outline-light" routerLink="/contacto">Contacto</a>
           </li>
