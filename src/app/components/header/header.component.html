@@ -1,4 +1,4 @@
-<header class="header" [ngClass]="{'header-dark': isProjectsPage()}">
+<header class="header" [ngClass]="{'header-dark': !isHomePage()}">
   <div class="container">
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand d-flex align-items-center" routerLink="/">
@@ -13,6 +13,7 @@
           <li class="nav-item"><a class="nav-link" routerLink="/" routerLinkActive="active"
               [routerLinkActiveOptions]="{exact: true}">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" routerLink="/projects" routerLinkActive="active">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/resources" routerLinkActive="active">Recursos</a></li>
           <li class="nav-item">
             <a class="btn btn-outline-light" href="mailto:profayra@gmail.com">Contacto</a>
           </li>

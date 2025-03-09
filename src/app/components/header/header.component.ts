@@ -24,7 +24,8 @@ export class HeaderComponent {
       });
   }
 
-  isProjectsPage(): boolean {
-    return this.currentRoute.includes('/projects');
+  isHomePage(): boolean {
+    console.log(this.currentRoute);
+    return this.currentRoute === '/' || this.currentRoute === '';
   }
 }
