@@ -1,6 +1,6 @@
 /* Estilos para la sección de recursos de videos */
 .resources-section {
-  padding: 4rem 0;
+  padding: 3rem 2rem;
 }
 
 .section-title {
@@ -98,7 +98,7 @@
   transform: translate(-50%, -50%);
   width: 70px;
   height: 70px;
-  background: rgb(255, 0, 0);
+  background: rgba(134, 53, 241, 0.707);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -186,8 +186,8 @@
 /* Videos Grid */
 .videos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
   margin-top: 20px;
 }
 
@@ -390,7 +390,7 @@
   .featured-title {
     font-size: 1.8rem;
   }
-  
+
   .videos-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
@@ -400,9 +400,9 @@
   .featured-image {
     height: 250px;
   }
-  
+
   .videos-grid {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   }
 }
 
@@ -410,22 +410,22 @@
   .videos-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .resource-buttons {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .newsletter-form .input-group {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
   }
-  
+
   .newsletter-form .form-control {
     border-radius: 15px 15px 0 0;
   }
-  
+
   .newsletter-form .btn {
     border-radius: 0 0 15px 15px;
     padding: 12px;
