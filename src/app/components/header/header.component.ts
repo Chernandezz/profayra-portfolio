@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { RouterModule, Router, NavigationEnd } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { filter } from 'rxjs/operators';
@@ -10,8 +10,9 @@ import { filter } from 'rxjs/operators';
   imports: [RouterModule, CommonModule],
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   currentRoute: string = '';
+  isMenuCollapsed = true;
 
   constructor(private router: Router) {}
 
@@ -21,11 +22,30 @@ export class HeaderComponent {
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe((event: any) => {
         this.currentRoute = event.urlAfterRedirects;
+        this.isMenuCollapsed = true;
       });
   }
 
   isHomePage(): boolean {
-    console.log(this.currentRoute);
     return this.currentRoute === '/' || this.currentRoute === '';
+  }
+
+  toggleMenu() {
+    this.isMenuCollapsed = !this.isMenuCollapsed;
+  }
+
+  closeMenu() {
+    if (!this.isMenuCollapsed) {
+      this.isMenuCollapsed = true;
+      document.body.style.overflow = '';
+    }
+  }
+
+  // Cerrar menú con la tecla Escape
+  @HostListener('window:keydown', ['$event'])
+  handleKeyDown(event: KeyboardEvent) {
+    if (event.key === 'Escape' && !this.isMenuCollapsed) {
+      this.closeMenu();
+    }
   }
 }

@@ -5,9 +5,12 @@
         <img src="assets/profayra.png" alt="Profayra Logo" class="logo me-2">
         <span>PROFAYRA</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" (click)="toggleMenu()" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Menú para pantallas grandes -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" routerLink="/" routerLinkActive="active"
@@ -21,4 +24,34 @@
       </div>
     </nav>
   </div>
+
+  <!-- Panel lateral para móviles -->
+  <div class="mobile-menu" [ngClass]="{'active': !isMenuCollapsed}">
+
+    <button class="close-menu-btn" (click)="closeMenu()">
+      <i class="fas fa-arrow-left"></i> <span>
+        Salir
+      </span>
+    </button>
+
+    <ul class="mobile-nav">
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+          (click)="closeMenu()">Inicio</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">Proyectos</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" routerLink="/resources" routerLinkActive="active" (click)="closeMenu()">Recursos</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="btn btn-outline-light mobile-contact-btn" href="mailto:profayra@gmail.com"
+          (click)="closeMenu()">Contacto</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Overlay para cerrar el menú al hacer clic fuera -->
+  <div class="mobile-menu-overlay" [ngClass]="{'active': !isMenuCollapsed}" (click)="closeMenu()"></div>
 </header>
