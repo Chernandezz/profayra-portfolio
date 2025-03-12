@@ -22,6 +22,7 @@
           </li>
         </ul>
       </div>
+
     </nav>
   </div>
 
@@ -48,6 +49,21 @@
       <li class="mobile-nav-item">
         <a class="btn btn-outline-light mobile-contact-btn" href="mailto:profayra@gmail.com"
           (click)="closeMenu()">Contacto</a>
+      </li>
+
+      <!-- Language switcher para móviles -->
+      <li class="mobile-nav-item language-options">
+        <span class="language-label">Idioma:</span>
+        <div class="mobile-language-switcher">
+          <button (click)="switchLanguage('en'); $event.stopPropagation();" [class.active]="currentLang === 'en'"
+            class="mobile-lang-btn">
+            <img src="assets/flags/en.png" alt="English" class="flag-icon"> English
+          </button>
+          <button (click)="switchLanguage('es'); $event.stopPropagation();" [class.active]="currentLang === 'es'"
+            class="mobile-lang-btn">
+            <img src="assets/flags/es.png" alt="Español" class="flag-icon"> Español
+          </button>
+        </div>
       </li>
     </ul>
   </div>

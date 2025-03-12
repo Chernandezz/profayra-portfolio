@@ -2,6 +2,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { RouterModule, Router, NavigationEnd } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { filter } from 'rxjs/operators';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -11,12 +12,22 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  // Track current language
+  currentLang: string = 'en';
+
+
+  // Method to switch languages
+  switchLanguage(lang: string) {
+    this.translate.use(lang);
+    this.currentLang = lang;
+  }
   currentRoute: string = '';
   isMenuCollapsed = true;
 
-  constructor(private router: Router) {}
+  constructor(private translate: TranslateService,private router: Router) {}
 
   ngOnInit() {
+    this.currentLang = this.translate.currentLang;
     // Suscribirse a los eventos de navegación para detectar la ruta actual
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
