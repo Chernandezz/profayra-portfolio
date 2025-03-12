@@ -1,0 +1,94 @@
+{
+  "HOME": {
+    "HERO": {
+      "SUBTITLE": "Boost your career with",
+      "TITLE": "Programming Tutoring",
+      "DESCRIPTION": "Learn from experts and take your skills to the next level",
+      "BUTTON": "Schedule Now"
+    },
+    "SERVICES": {
+      "TITLE": "Our Services",
+      "DESCRIPTION": "Customized solutions for all levels and needs",
+      "PERSONALIZED_TUTORING": {
+        "TITLE": "Personalized Tutoring",
+        "DESCRIPTION": "Learn programming in a personalized way with an expert tutor who adapts to your level and goals.",
+        "FEATURES": ["Flexible schedules", "Focus on your needs"],
+        "PRICE": "Price: $20 USD per session",
+        "BUTTON": "Book a Session"
+      },
+      "STUDY_GROUP": {
+        "TITLE": "Study Group",
+        "DESCRIPTION": "Learn with your friends or coworkers, review concepts, and solve doubts together with a specialized tutor.",
+        "FEATURES": ["More than 1 participant", "Collaborative learning"],
+        "PRICE": "Price: $20 USD base + $10 per additional person",
+        "BUTTON": "Book Group"
+      },
+      "OTHER_SERVICES": {
+        "TITLE": "Other Services",
+        "DESCRIPTION": "Do you need consulting or advice on other services? We are here to help you with solutions tailored to your needs.",
+        "FEATURES": ["Project development", "Custom courses"],
+        "PRICE": "Price: Contact us for a personalized quote",
+        "BUTTON": "Contact"
+      }
+    },
+    "PROJECTS": {
+      "TITLE": "Project Portfolio",
+      "DESCRIPTION": "Discover our collection of projects developed with the latest technologies",
+      "CTA_TITLE": "Do you have a project in mind?",
+      "CTA_DESCRIPTION": "Let's work together to turn your ideas into effective digital solutions.",
+      "CTA_BUTTON": "Contact Us",
+      "PROJECT_CARD": {
+        "BUTTON_PROJECT": "View Project",
+        "BUTTON_GITHUB": "GitHub"
+      }
+    },
+    "RESOURCES": {
+      "TITLE": "Downloadable Resources",
+      "DESCRIPTION": "Exclusive materials and tools that complement our tutorials on YouTube",
+      "SEARCH_PLACEHOLDER": "Search videos or resources...",
+      "FEATURED": {
+        "BADGE": "Featured",
+        "BUTTON": "Watch Video",
+        "RESOURCES_TITLE": "Available resources:"
+      },
+      "VIDEO_CARD": {
+        "RESOURCES_TITLE": "Resources:"
+      },
+      "NO_RESULTS": {
+        "TITLE": "No videos found",
+        "DESCRIPTION": "Try another search or select a different topic"
+      }
+    },
+    "TESTIMONIALS": {
+      "TITLE": "What our students say",
+      "REVIEWS": [
+        {
+          "TEXT": "The tutoring sessions helped me understand complex programming concepts that I couldn't grasp in class.",
+          "AUTHOR": "Ana Martínez",
+          "ROLE": "Engineering Student"
+        },
+        {
+          "TEXT": "Thanks to the group sessions, our team was able to understand complicated concepts in record time.",
+          "AUTHOR": "Carlos Rodríguez",
+          "ROLE": "Development Lead"
+        },
+        {
+          "TEXT": "My tutor adapted perfectly to my learning pace and helped me with multiple university projects.",
+          "AUTHOR": "Laura Gómez",
+          "ROLE": "Junior Developer"
+        }
+      ]
+    },
+    "CTA": {
+      "TITLE": "Ready to boost your programming career?",
+      "DESCRIPTION": "Take the first step towards mastering programming with our experts.",
+      "BUTTON": "Schedule First Session"
+    },
+    "NEWSLETTER": {
+      "TITLE": "Want to get notified about new videos?",
+      "DESCRIPTION": "Subscribe to be the first to know when we publish new tutorials and resources.",
+      "PLACEHOLDER": "Your email address",
+      "BUTTON": "Subscribe"
+    }
+  }
+}

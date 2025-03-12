@@ -1,0 +1,94 @@
+{
+  "HOME": {
+    "HERO": {
+      "SUBTITLE": "Impulsa tu carrera con",
+      "TITLE": "Tutorías de Programación",
+      "DESCRIPTION": "Aprende con expertos y lleva tus habilidades al siguiente nivel",
+      "BUTTON": "Agendar Ahora"
+    },
+    "SERVICES": {
+      "TITLE": "Nuestros Servicios",
+      "DESCRIPTION": "Soluciones personalizadas para todos los niveles y necesidades",
+      "PERSONALIZED_TUTORING": {
+        "TITLE": "Monitorías Personalizadas",
+        "DESCRIPTION": "Aprende programación de manera personalizada con un tutor experto que se adapta a tu nivel y objetivos.",
+        "FEATURES": ["Horarios flexibles", "Enfoque en tus necesidades"],
+        "PRICE": "Precio: $20 USD por sesión",
+        "BUTTON": "Reservar Sesión"
+      },
+      "STUDY_GROUP": {
+        "TITLE": "Grupo de Estudio",
+        "DESCRIPTION": "Aprende con tus amigos o compañeros de trabajo, repasa conceptos y resuelve dudas juntos con un tutor especializado.",
+        "FEATURES": ["Más de 1 participante", "Aprendizaje colaborativo"],
+        "PRICE": "Precio: $20 USD base + $10 por persona adicional",
+        "BUTTON": "Reservar Grupo"
+      },
+      "OTHER_SERVICES": {
+        "TITLE": "Otros Servicios",
+        "DESCRIPTION": "¿Necesitas consultoría o asesoramiento en otros servicios? Estamos aquí para ayudarte con soluciones adaptadas a tus necesidades.",
+        "FEATURES": ["Desarrollo de proyectos", "Cursos a medida"],
+        "PRICE": "Precio: Contáctanos para un presupuesto personalizado",
+        "BUTTON": "Contactar"
+      }
+    },
+    "PROJECTS": {
+      "TITLE": "Portafolio de Proyectos",
+      "DESCRIPTION": "Descubre nuestra colección de proyectos desarrollados con las últimas tecnologías",
+      "CTA_TITLE": "¿Tienes un proyecto en mente?",
+      "CTA_DESCRIPTION": "Trabajemos juntos para convertir tus ideas en soluciones digitales efectivas.",
+      "CTA_BUTTON": "Contáctanos",
+      "PROJECT_CARD": {
+        "BUTTON_PROJECT": "Ver Proyecto",
+        "BUTTON_GITHUB": "GitHub"
+      }
+    },
+    "RESOURCES": {
+      "TITLE": "Recursos Descargables",
+      "DESCRIPTION": "Materiales exclusivos y herramientas que complementan nuestros tutoriales en YouTube",
+      "SEARCH_PLACEHOLDER": "Buscar videos o recursos...",
+      "FEATURED": {
+        "BADGE": "Destacado",
+        "BUTTON": "Ver Video",
+        "RESOURCES_TITLE": "Recursos disponibles:"
+      },
+      "VIDEO_CARD": {
+        "RESOURCES_TITLE": "Recursos:"
+      },
+      "NO_RESULTS": {
+        "TITLE": "No se encontraron videos",
+        "DESCRIPTION": "Intenta con otra búsqueda o selecciona otro tema"
+      }
+    },
+    "TESTIMONIALS": {
+      "TITLE": "Lo que dicen nuestros estudiantes",
+      "REVIEWS": [
+        {
+          "TEXT": "Las monitorías me ayudaron a entender conceptos complejos de programación que no podía comprender en clase.",
+          "AUTHOR": "Ana Martínez",
+          "ROLE": "Estudiante de Ingeniería"
+        },
+        {
+          "TEXT": "Gracias a las sesiones grupales, nuestro equipo logró entender conceptos complicados en tiempo récord.",
+          "AUTHOR": "Carlos Rodríguez",
+          "ROLE": "Líder de Desarrollo"
+        },
+        {
+          "TEXT": "Mi monitor se adaptó perfectamente a mi ritmo de aprendizaje y me ayudó con múltiples proyectos de mi universidad.",
+          "AUTHOR": "Laura Gómez",
+          "ROLE": "Desarrolladora Junior"
+        }
+      ]
+    },
+    "CTA": {
+      "TITLE": "¿Listo para impulsar tu carrera en programación?",
+      "DESCRIPTION": "Da el primer paso hacia el dominio de la programación con nuestros expertos.",
+      "BUTTON": "Agendar Primera Sesión"
+    },
+    "NEWSLETTER": {
+      "TITLE": "¿Quieres recibir notificaciones de nuevos videos?",
+      "DESCRIPTION": "Suscríbete para saber cuando publiquemos nuevos tutoriales y recursos.",
+      "PLACEHOLDER": "Tu correo electrónico",
+      "BUTTON": "Suscribirme"
+    }
+  }
+}
