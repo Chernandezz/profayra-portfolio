@@ -1,7 +1,6 @@
 <section class="container projects-section">
-  <h2 class="section-title text-center mb-5 fw-bold">Portafolio de Proyectos</h2>
-  <p class="section-description text-center mb-5">Descubre nuestra colección de proyectos desarrollados con las últimas
-    tecnologías</p>
+  <h2 class="section-title text-center mb-5 fw-bold">{{ 'HOME.PROJECTS.TITLE' | translate }}</h2>
+  <p class="section-description text-center mb-5">{{ 'HOME.PROJECTS.DESCRIPTION' | translate }}</p>
 
   <!-- Grid de Proyectos -->
   <div class="projects-grid">
@@ -11,10 +10,10 @@
         <div class="project-overlay">
           <div class="project-links">
             <a *ngIf="project.projectLink" [href]="project.projectLink" target="_blank" class="project-link">
-              <i class="fas fa-external-link-alt"></i> Ver Proyecto
+              <i class="fas fa-external-link-alt"></i> {{ 'HOME.PROJECTS.PROJECT_CARD.BUTTON_PROJECT' | translate }}
             </a>
             <a *ngIf="project.githubLink" [href]="project.githubLink" target="_blank" class="project-link">
-              <i class="fab fa-github"></i> GitHub
+              <i class="fab fa-github"></i> {{ 'HOME.PROJECTS.PROJECT_CARD.BUTTON_GITHUB' | translate }}
             </a>
           </div>
         </div>
@@ -34,9 +33,11 @@
 <section class="cta-section">
   <div class="container">
     <div class="cta-content">
-      <h2>¿Tienes un proyecto en mente?</h2>
-      <p>Trabajemos juntos para convertir tus ideas en soluciones digitales efectivas.</p>
-      <button class="btn btn-primary mt-4 px-5 py-3">Contáctanos</button>
+      <h2>{{ 'HOME.PROJECTS.CTA_TITLE' | translate }}</h2>
+      <p>{{ 'HOME.PROJECTS.CTA_DESCRIPTION' | translate }}</p>
+      <button class="btn btn-primary mt-4 px-5 py-3">
+        {{ 'HOME.PROJECTS.CTA_BUTTON' | translate }}
+      </button>
     </div>
   </div>
 </section>

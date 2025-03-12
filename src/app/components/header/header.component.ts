@@ -2,19 +2,18 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { RouterModule, Router, NavigationEnd } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { filter } from 'rxjs/operators';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   standalone: true,
-  imports: [RouterModule, CommonModule],
+  imports: [RouterModule, CommonModule, TranslateModule],
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
   // Track current language
-  currentLang: string = 'en';
-
+  currentLang: string = 'es';
 
   // Method to switch languages
   switchLanguage(lang: string) {
@@ -24,7 +23,7 @@ export class HeaderComponent implements OnInit {
   currentRoute: string = '';
   isMenuCollapsed = true;
 
-  constructor(private translate: TranslateService,private router: Router) {}
+  constructor(private translate: TranslateService, private router: Router) {}
 
   ngOnInit() {
     this.currentLang = this.translate.currentLang;

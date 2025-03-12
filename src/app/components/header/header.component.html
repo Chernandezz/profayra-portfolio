@@ -5,6 +5,7 @@
         <img src="assets/profayra.png" alt="Profayra Logo" class="logo me-2">
         <span>PROFAYRA</span>
       </a>
+
       <button class="navbar-toggler" type="button" (click)="toggleMenu()" aria-controls="navbarNav"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -13,16 +14,38 @@
       <!-- Menú para pantallas grandes -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" routerLink="/" routerLinkActive="active"
-              [routerLinkActiveOptions]="{exact: true}">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="/projects" routerLinkActive="active">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="/resources" routerLinkActive="active">Recursos</a></li>
           <li class="nav-item">
-            <a class="btn btn-outline-light" href="mailto:profayra@gmail.com">Contacto</a>
+            <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{
+              'HEADER.NAV.HOME' | translate }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/projects" routerLinkActive="active">
+              {{ 'HEADER.NAV.PROJECTS' | translate }}
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/resources" routerLinkActive="active">
+              {{ 'HEADER.NAV.RESOURCES' | translate }}
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-light" href="mailto:profayra@gmail.com">
+              {{ 'HEADER.NAV.CONTACT' | translate }}
+            </a>
+          </li>
+          <!-- Language switcher para pantallas grandes -->
+          <li class="nav-item ms-3 d-none d-lg-block">
+            <div class="header-language-switcher">
+              <button (click)="switchLanguage('en')" [class.active]="currentLang === 'en'" class="lang-btn">
+                <img src="assets/flags/en.webp" alt="English" class="flag-icon">
+              </button>
+              <button (click)="switchLanguage('es')" [class.active]="currentLang === 'es'" class="lang-btn">
+                <img src="assets/flags/es.webp" alt="Español" class="flag-icon">
+              </button>
+            </div>
           </li>
         </ul>
       </div>
-
     </nav>
   </div>
 
@@ -30,38 +53,46 @@
   <div class="mobile-menu" [ngClass]="{'active': !isMenuCollapsed}">
 
     <button class="close-menu-btn" (click)="closeMenu()">
-      <i class="fas fa-arrow-left"></i> <span>
-        Salir
-      </span>
+      <i class="fas fa-arrow-left"></i>
+      <span>{{ 'HEADER.MOBILE_MENU.EXIT' | translate }}</span>
     </button>
 
     <ul class="mobile-nav">
       <li class="mobile-nav-item">
         <a class="mobile-nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
-          (click)="closeMenu()">Inicio</a>
+          (click)="closeMenu()">
+          {{ 'HEADER.NAV.HOME' | translate }}
+        </a>
       </li>
       <li class="mobile-nav-item">
-        <a class="mobile-nav-link" routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">Proyectos</a>
+        <a class="mobile-nav-link" routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">
+          {{ 'HEADER.NAV.PROJECTS' | translate }}
+        </a>
       </li>
       <li class="mobile-nav-item">
-        <a class="mobile-nav-link" routerLink="/resources" routerLinkActive="active" (click)="closeMenu()">Recursos</a>
+        <a class="mobile-nav-link" routerLink="/resources" routerLinkActive="active" (click)="closeMenu()">
+          {{ 'HEADER.NAV.RESOURCES' | translate }}
+        </a>
       </li>
       <li class="mobile-nav-item">
-        <a class="btn btn-outline-light mobile-contact-btn" href="mailto:profayra@gmail.com"
-          (click)="closeMenu()">Contacto</a>
+        <a class="btn btn-outline-light mobile-contact-btn" href="mailto:profayra@gmail.com" (click)="closeMenu()">
+          {{ 'HEADER.NAV.CONTACT' | translate }}
+        </a>
       </li>
 
       <!-- Language switcher para móviles -->
       <li class="mobile-nav-item language-options">
-        <span class="language-label">Idioma:</span>
+        <span class="language-label">{{ 'HEADER.MOBILE_MENU.LANGUAGE_LABEL' | translate }}</span>
         <div class="mobile-language-switcher">
           <button (click)="switchLanguage('en'); $event.stopPropagation();" [class.active]="currentLang === 'en'"
             class="mobile-lang-btn">
-            <img src="assets/flags/en.webp" alt="English" class="flag-icon"> English
+            <img src="assets/flags/en.webp" alt="English" class="flag-icon">
+            {{ 'HEADER.MOBILE_MENU.LANGUAGES.ENGLISH' | translate }}
           </button>
           <button (click)="switchLanguage('es'); $event.stopPropagation();" [class.active]="currentLang === 'es'"
             class="mobile-lang-btn">
-            <img src="assets/flags/es.webp" alt="Español" class="flag-icon"> Español
+            <img src="assets/flags/es.webp" alt="Español" class="flag-icon">
+            {{ 'HEADER.MOBILE_MENU.LANGUAGES.SPANISH' | translate }}
           </button>
         </div>
       </li>
