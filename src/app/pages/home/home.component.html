@@ -1,90 +1,99 @@
+
+
+<!-- Hero Section -->
 <section class="hero" style="background-image: url('assets/banner2.webp');">
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <h3 class="subtitle">Impulsa tu carrera con</h3>
-    <h1 class="hero-title">Tutorias de Programación</h1>
-    <p class="hero-description">Aprende con expertos y lleva tus habilidades al siguiente nivel</p>
-    <a class="btn btn-primary mt-4 px-5 py-3" href="https://calendly.com/profayra-z4c/30min" target="_blank">Agendar
-      Ahora</a>
+    <h3 class="subtitle">{{ 'HOME.HERO.SUBTITLE' | translate }}</h3>
+    <h1 class="hero-title">{{ 'HOME.HERO.TITLE' | translate }}</h1>
+    <p class="hero-description">{{ 'HOME.HERO.DESCRIPTION' | translate }}</p>
+    <a class="btn btn-primary mt-4 px-5 py-3" href="https://calendly.com/profayra-z4c/30min" target="_blank">
+      {{ 'HOME.HERO.BUTTON' | translate }}
+    </a>
   </div>
 </section>
+
+<!-- Services Section -->
 <section class="container plans-section">
-  <h2 class="section-title text-center mb-5 fw-bold">Nuestros Servicios</h2>
-  <p class="section-description text-center mb-5">Soluciones personalizadas para todos los niveles y necesidades</p>
+  <h2 class="section-title text-center mb-5 fw-bold">{{ 'HOME.SERVICES.TITLE' | translate }}</h2>
+  <p class="section-description text-center mb-5">{{ 'HOME.SERVICES.DESCRIPTION' | translate }}</p>
 
-  <!-- Tarjetas de Servicios -->
+  <!-- Service Cards -->
   <div class="services-grid">
-    <!-- Servicio 1: Monitorías Personalizadas -->
+    <!-- Service 1: Personalized Tutoring -->
     <div class="service-card">
       <div class="service-icon">
-        <img src="assets/tutor1.webp" class="img-fluid" alt="Monitorías Personalizadas">
+        <img src="assets/tutor1.webp" class="img-fluid" alt="Personalized Tutoring">
       </div>
       <div class="service-content">
-        <h3 class="service-title">Monitorías Personalizadas</h3>
+        <h3 class="service-title">{{ 'HOME.SERVICES.PERSONALIZED_TUTORING.TITLE' | translate }}</h3>
         <p class="service-description">
-          Aprende programación de manera personalizada con un tutor experto que se adapta a tu nivel y objetivos.
+          {{ 'HOME.SERVICES.PERSONALIZED_TUTORING.DESCRIPTION' | translate }}
         </p>
         <ul class="service-features">
-          <li>Horarios flexibles</li>
-          <li>Enfoque en tus necesidades</li>
+          <li>{{ 'HOME.SERVICES.PERSONALIZED_TUTORING.FEATURES.0' | translate }}</li>
+          <li>{{ 'HOME.SERVICES.PERSONALIZED_TUTORING.FEATURES.1' | translate }}</li>
         </ul>
-        <p class="service-price"><strong>Precio:</strong> $20 USD por sesión</p>
-        <a href="https://calendly.com/profayra-z4c/30min" target="_blank" class="btn btn-primary">Reservar Sesión</a>
+        <p class="service-price"><strong>{{ 'HOME.SERVICES.PERSONALIZED_TUTORING.PRICE' | translate }}</strong></p>
+        <a href="https://calendly.com/profayra-z4c/30min" target="_blank" class="btn btn-primary">
+          {{ 'HOME.SERVICES.PERSONALIZED_TUTORING.BUTTON' | translate }}
+        </a>
       </div>
     </div>
 
-    <!-- Servicio 2: Grupo de Estudio -->
+    <!-- Service 2: Study Group -->
     <div class="service-card">
       <div class="service-icon">
-        <img src="assets/tutorGroup.webp" class="img-fluid" alt="Grupo de Estudio">
+        <img src="assets/tutorGroup.webp" class="img-fluid" alt="Study Group">
       </div>
       <div class="service-content">
-        <h3 class="service-title">Grupo de Estudio</h3>
+        <h3 class="service-title">{{ 'HOME.SERVICES.STUDY_GROUP.TITLE' | translate }}</h3>
         <p class="service-description">
-          Aprende con tus amigos o compañeros de trabajo, repasa conceptos y resuelve dudas juntos con un tutor
-          especializado.
+          {{ 'HOME.SERVICES.STUDY_GROUP.DESCRIPTION' | translate }}
         </p>
         <ul class="service-features">
-          <li>Mas de 1 participante</li>
-          <li>Aprendizaje colaborativo</li>
+          <li>{{ 'HOME.SERVICES.STUDY_GROUP.FEATURES.0' | translate }}</li>
+          <li>{{ 'HOME.SERVICES.STUDY_GROUP.FEATURES.1' | translate }}</li>
         </ul>
-        <p class="service-price"><strong>Precio:</strong> $20 USD base + $10 por persona adicional</p>
-        <a href="https://calendly.com/profayra-z4c/30min" target="_blank" class="btn btn-primary">Reservar Grupo</a>
+        <p class="service-price"><strong>{{ 'HOME.SERVICES.STUDY_GROUP.PRICE' | translate }}</strong></p>
+        <a href="https://calendly.com/profayra-z4c/30min" target="_blank" class="btn btn-primary">
+          {{ 'HOME.SERVICES.STUDY_GROUP.BUTTON' | translate }}
+        </a>
       </div>
     </div>
 
-    <!-- Servicio 3: Otros Servicios -->
+    <!-- Service 3: Other Services -->
     <div class="service-card">
       <div class="service-icon">
-        <img src="assets/enterprise.webp" class="img-fluid" alt="Otros Servicios">
+        <img src="assets/enterprise.webp" class="img-fluid" alt="Other Services">
       </div>
       <div class="service-content">
-        <h3 class="service-title">Otros Servicios</h3>
+        <h3 class="service-title">{{ 'HOME.SERVICES.OTHER_SERVICES.TITLE' | translate }}</h3>
         <p class="service-description">
-          ¿Necesitas consultoría o asesoramiento en otros servicios? Estamos aquí para ayudarte con soluciones
-          adaptadas a tus necesidades.
+          {{ 'HOME.SERVICES.OTHER_SERVICES.DESCRIPTION' | translate }}
         </p>
         <ul class="service-features">
-          <li>Desarrollo de proyectos</li>
-          <li>Cursos a medida</li>
+          <li>{{ 'HOME.SERVICES.OTHER_SERVICES.FEATURES.0' | translate }}</li>
+          <li>{{ 'HOME.SERVICES.OTHER_SERVICES.FEATURES.1' | translate }}</li>
         </ul>
-        <p class="service-price"><strong>Precio:</strong> Contáctanos para un presupuesto personalizado</p>
-        <a href="mailto:profayra@gmail.com" class="btn btn-primary">Contactar</a>
+        <p class="service-price"><strong>{{ 'HOME.SERVICES.OTHER_SERVICES.PRICE' | translate }}</strong></p>
+        <a href="mailto:profayra@gmail.com" class="btn btn-primary">
+          {{ 'HOME.SERVICES.OTHER_SERVICES.BUTTON' | translate }}
+        </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Sección de Testimonios -->
+<!-- Testimonials Section -->
 <section class="testimonials-section">
   <div class="container px-5">
-    <h2 class="section-title text-center mb-5 fw-bold">Lo que dicen nuestros estudiantes</h2>
+    <h2 class="section-title text-center mb-5 fw-bold">{{ 'HOME.TESTIMONIALS.TITLE' | translate }}</h2>
 
     <div class="testimonials-grid">
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <p>"Las monitorías me ayudaron a entender conceptos complejos de programación que no podía comprender en
-            clase."</p>
+          <p>"{{ 'HOME.TESTIMONIALS.REVIEWS.0.TEXT' | translate }}"</p>
         </div>
         <div class="testimonial-author">
           <div class="author-avatar">
@@ -93,54 +102,54 @@
               alt="Avatar">
           </div>
           <div class="author-info">
-            <h4>Ana Martínez</h4>
-            <p>Estudiante de Ingeniería</p>
+            <h4>{{ 'HOME.TESTIMONIALS.REVIEWS.0.AUTHOR' | translate }}</h4>
+            <p>{{ 'HOME.TESTIMONIALS.REVIEWS.0.ROLE' | translate }}</p>
           </div>
         </div>
       </div>
 
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <p>"Gracias a las sesiones grupales, nuestro equipo logró entender conceptos complicados en tiempo record."
-          </p>
+          <p>"{{ 'HOME.TESTIMONIALS.REVIEWS.1.TEXT' | translate }}"</p>
         </div>
         <div class="testimonial-author">
           <div class="author-avatar">
             <img src="https://images.snapwi.re/b27a/5744b3adb5b2c520297b23c8.w800.jpg" alt="Avatar">
           </div>
           <div class="author-info">
-            <h4>Carlos Rodríguez</h4>
-            <p>Líder de Desarrollo</p>
+            <h4>{{ 'HOME.TESTIMONIALS.REVIEWS.1.AUTHOR' | translate }}</h4>
+            <p>{{ 'HOME.TESTIMONIALS.REVIEWS.1.ROLE' | translate }}</p>
           </div>
         </div>
       </div>
 
       <div class="testimonial-card">
         <div class="testimonial-content">
-          <p>"Mi monitor se adaptó perfectamente a mi ritmo de aprendizaje y me ayudo con multiples proyectos de mi
-            universidad."</p>
+          <p>"{{ 'HOME.TESTIMONIALS.REVIEWS.2.TEXT' | translate }}"</p>
         </div>
         <div class="testimonial-author">
           <div class="author-avatar">
             <img src="https://i.pinimg.com/550x/9d/b3/4e/9db34e853e768d0dcf164aacd57df31b.jpg" alt="Avatar">
           </div>
           <div class="author-info">
-            <h4>Laura Gómez</h4>
-            <p>Desarrolladora Junior</p>
+            <h4>{{ 'HOME.TESTIMONIALS.REVIEWS.2.AUTHOR' | translate }}</h4>
+            <p>{{ 'HOME.TESTIMONIALS.REVIEWS.2.ROLE' | translate }}</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- Sección de CTA -->
+
+<!-- CTA Section -->
 <section class="cta-section">
   <div class="container px-5">
     <div class="cta-content">
-      <h2>¿Listo para impulsar tu carrera en programación?</h2>
-      <p>Da el primer paso hacia el dominio de la programación con nuestros expertos.</p>
-      <a href="https://calendly.com/profayra-z4c/30min" target="_blank" class="btn btn-primary mt-4 px-5 py-3">Agendar
-        Primera Sesión</a>
+      <h2>{{ 'HOME.CTA.TITLE' | translate }}</h2>
+      <p>{{ 'HOME.CTA.DESCRIPTION' | translate }}</p>
+      <a href="https://calendly.com/profayra-z4c/30min" target="_blank" class="btn btn-primary mt-4 px-5 py-3">
+        {{ 'HOME.CTA.BUTTON' | translate }}
+      </a>
     </div>
   </div>
 </section>
