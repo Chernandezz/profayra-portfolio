@@ -60,37 +60,52 @@
       "LIST": [
         {
           "id": 1,
-          "name": "Cafena",
+          "name": "Hospital Managment System",
+          "description": "Complete system for managing patient records, appointments, and medical history",
+          "imageUrl": "assets/projects/healthManagment.webp",
+          "technologies": [
+            ".NET",
+            "Angular",
+            "Docker",
+            "Entity Framework",
+            "SQL Server"
+          ],
+          "projectLink": "",
+          "githubLink": "https://github.com/Chernandezz/mPath-Project"
+        },
+        {
+          "id": 2,
+          "name": "Cafeina",
           "description": "RESTful service for transforming and analyzing large volumes of data with OAuth authentication.",
           "imageUrl": "assets/projects/cafena.webp",
-          "technologies": ["Python", "FastAPI", "PostgreSQL", "Redis"],
+          "technologies": ["HTML", "CSS", "JavaScript"],
           "projectLink": "https://coffe-shop-ch.netlify.app/",
           "githubLink": ""
         },
         {
-          "id": 2,
+          "id": 3,
           "name": "Copa America USA 2024",
           "description": "Complete admin panel for online stores with sales analytics and inventory management.",
           "imageUrl": "assets/projects/copaAmerica.webp",
-          "technologies": ["Angular", "Node.js", "MongoDB", "Express"],
+          "technologies": ["HTML", "SCSS", "Bootstrap", "JavaScript"],
           "projectLink": "https://thunderous-granita-9d371d.netlify.app/",
           "githubLink": ""
         },
         {
-          "id": 3,
+          "id": 4,
           "name": "Lollapalooza",
           "description": "Application for tracking expenses, budgeting, and visualizing personal financial habits.",
           "imageUrl": "assets/projects/lollapalooza.webp",
-          "technologies": ["React", "Firebase", "Chart.js", "Material UI"],
+          "technologies": ["HTML", "CSS", "Tailwind CSS", "Font Awesome"],
           "projectLink": "https://serene-daifuku-9ef7b4.netlify.app/",
           "githubLink": ""
         },
         {
-          "id": 4,
+          "id": 8,
           "name": "Coffee Blog",
           "description": "Tool for taking real-time notes with collaboration and advanced organization options.",
           "imageUrl": "assets/projects/blogDeCafe.webp",
-          "technologies": ["React", "Socket.io", "Express", "MongoDB"],
+          "technologies": ["HTML", "CSS", "JavaScript"],
           "projectLink": "https://blogdecafe-ch.netlify.app/",
           "githubLink": ""
         },
@@ -99,30 +114,30 @@
           "name": "Genetic Algorithm on the Web",
           "description": "Platform for course management, students, and grading with communication modules.",
           "imageUrl": "assets/projects/geneticAlgorithm.webp",
-          "technologies": ["Vue.js", "Laravel", "MySQL", "Tailwind CSS"],
+          "technologies": ["Angular", "TypeScript", "Bootstrap"],
           "projectLink": "https://algoritmogeneticounal.netlify.app/genetico",
-          "githubLink": "https://github.com/profayra/education-management"
+          "githubLink": "https://github.com/Chernandezz/proyecto-de-grado-angular"
         },
         {
           "id": 6,
           "name": "The Movieauro",
           "description": "System for organizing and managing virtual conferences with interactive rooms and networking.",
           "imageUrl": "assets/projects/theMovieauro.webp",
-          "technologies": ["Angular", "WebRTC", "Node.js", "Firebase"],
+          "technologies": ["Movies Apis", "CSS", "JavaScript", "HTML"],
           "projectLink": "https://trabajo-final-kekh.vercel.app/",
-          "githubLink": "https://github.com/profayra/virtual-events-platform"
+          "githubLink": ""
         },
         {
           "id": 7,
           "name": "Rock EDM Festival",
           "description": "Mobile app for tracking workouts, nutrition, and physical progress.",
           "imageUrl": "assets/projects/rockFestival.webp",
-          "technologies": ["React Native", "Redux", "Firebase", "GraphQL"],
+          "technologies": ["HTML", "CSS", "JavaScript"],
           "projectLink": "https://glittering-moonbeam-4893f4.netlify.app/",
-          "githubLink": "https://github.com/profayra/fitness-app"
+          "githubLink": ""
         },
         {
-          "id": 8,
+          "id": 9,
           "name": "Other Projects",
           "description": "Tool for project management with agile methodologies, Kanban boards, and sprint tracking.",
           "imageUrl": "assets/projects/github.webp",
