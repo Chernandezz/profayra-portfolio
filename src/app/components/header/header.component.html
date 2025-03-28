@@ -34,14 +34,19 @@
             </a>
           </li>
           <!-- Language switcher para pantallas grandes -->
-          <li class="nav-item ms-3 d-none d-lg-block">
-            <div class="header-language-switcher">
-              <button (click)="switchLanguage('en')" [class.active]="currentLang === 'en'" class="lang-btn">
-                <img src="assets/flags/en.webp" alt="English" class="flag-icon">
+          <li class="nav-item ms-3 d-none d-lg-block language-dropdown">
+            <div class="language-selector">
+              <button class="current-language">
+                <img src="assets/flags/{{currentLang}}.webp" alt="{{currentLang}}" class="flag-icon">
               </button>
-              <button (click)="switchLanguage('es')" [class.active]="currentLang === 'es'" class="lang-btn">
-                <img src="assets/flags/es.webp" alt="Español" class="flag-icon">
-              </button>
+              <div class="language-options">
+                <button *ngIf="currentLang !== 'en'" (click)="switchLanguage('en')" class="language-option">
+                  <img src="assets/flags/en.webp" alt="English" class="flag-icon">
+                </button>
+                <button *ngIf="currentLang !== 'es'" (click)="switchLanguage('es')" class="language-option">
+                  <img src="assets/flags/es.webp" alt="Español" class="flag-icon">
+                </button>
+              </div>
             </div>
           </li>
         </ul>
