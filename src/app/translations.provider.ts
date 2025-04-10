@@ -1,4 +1,9 @@
-import { APP_INITIALIZER, makeEnvironmentProviders } from '@angular/core';
+import { isPlatformBrowser, isPlatformServer } from '@angular/common';
+import {
+  APP_INITIALIZER,
+  PLATFORM_ID,
+  makeEnvironmentProviders,
+} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {
   TranslateLoader,
@@ -6,55 +11,62 @@ import {
   TranslateService,
 } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { translateServerLoaderFactory } from './translate-server.loader';
+import { firstValueFrom } from 'rxjs';
 
-// Factory function to create the TranslateHttpLoader
-export function HttpLoaderFactory(http: HttpClient) {
+// Factory para cargador en navegador
+export function httpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
-// Factory function to initialize translations
-export function initializeTranslations(translate: TranslateService) {
-  return () => {
-    // Available languages
-    translate.addLangs(['en', 'es']);
+// Factory para seleccionar el cargador apropiado
+export function loaderFactory(http: HttpClient, platformId: Object) {
+  if (isPlatformBrowser(platformId)) {
+    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  } else {
+    return translateServerLoaderFactory();
+  }
+}
 
-    // Set default language as fallback
+// Función de inicialización
+export function initializeTranslations(
+  translate: TranslateService,
+  platformId: Object
+) {
+  return () => {
+    translate.addLangs(['en', 'es']);
     translate.setDefaultLang('es');
 
-    // Try to get browser language
-    const browserLang = translate.getBrowserLang();
+    if (isPlatformBrowser(platformId)) {
+      const browserLang = translate.getBrowserLang();
+      const langToUse = browserLang?.match(/en|es/) ? browserLang : 'es';
+      translate.use(langToUse);
+    } else {
+      // En el servidor, simplemente usa el idioma predeterminado
+      translate.use('es');
+    }
 
-    // Use browser language if it's available in our translations, otherwise use default
-    // Only use first two characters of language code (e.g. 'en-US' becomes 'en')
-    const langToUse = browserLang?.match(/en|es/) ? browserLang : 'es';
-
-    // Use detected language
-    translate.use(langToUse);
-
-    // Return a promise to ensure the translations are loaded before app starts
-    return translate.get('HOME.HERO.TITLE').toPromise();
+    // Usa firstValueFrom en lugar de toPromise
+    return firstValueFrom(translate.get('HOME.HERO.TITLE'));
   };
 }
 
-// Main provider function for translations
 export function provideTranslations() {
   return makeEnvironmentProviders([
-    // Import the TranslateModule with configuration
     TranslateModule.forRoot({
       defaultLanguage: 'es',
       isolate: false,
       loader: {
         provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient],
+        useFactory: loaderFactory,
+        deps: [HttpClient, PLATFORM_ID],
       },
     }).providers || [],
 
-    // Add an APP_INITIALIZER to load translations at startup and detect browser language
     {
       provide: APP_INITIALIZER,
       useFactory: initializeTranslations,
-      deps: [TranslateService],
+      deps: [TranslateService, PLATFORM_ID],
       multi: true,
     },
   ]);
