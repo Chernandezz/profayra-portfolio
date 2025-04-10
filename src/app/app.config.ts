@@ -16,6 +16,6 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideClientHydration(withEventReplay()),
     provideHttpClient(),
-    provideTranslations(),
+    provideTranslations(),provideClientHydration(withEventReplay()),
   ],
 };
