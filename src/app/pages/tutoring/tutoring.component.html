@@ -1,0 +1,102 @@
+<!-- Free Consultation Banner -->
+<section class="free-consultation-banner">
+  <div class="container">
+    <div class="consultation-content">
+      <div class="consultation-icon">
+        <i class="fas fa-calendar-check"></i>
+      </div>
+      <div class="consultation-text">
+        <h3>{{ 'SERVICES.WEBSITE.CONSULTATION.TITLE' | translate }}</h3>
+        <p>{{ 'SERVICES.WEBSITE.CONSULTATION.DESCRIPTION' | translate }}</p>
+      </div>
+      <a href="https://calendly.com/profayra-z4c/30min" target="_blank" class="btn btn-light consultation-btn">
+        {{ 'SERVICES.WEBSITE.CONSULTATION.BUTTON' | translate }}
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Service Plans Section -->
+<section class="container plans-section">
+  <h2 class="section-title text-center mb-5 fw-bold">{{ 'SERVICES.WEBSITE.PLANS.TITLE' | translate }}</h2>
+  <p class="section-description text-center mb-5">{{ 'SERVICES.WEBSITE.PLANS.DESCRIPTION' | translate }}</p>
+
+  <div class="services-grid">
+    <!-- Basic Website -->
+    <div class="service-card">
+      <div class="service-icon">
+        <img src="assets/basicwebsite.png" class="img-fluid" alt="Basic Website">
+      </div>
+      <div class="service-content">
+        <h3 class="service-title">{{ 'SERVICES.WEBSITE.PLANS.BASIC.TITLE' | translate }}</h3>
+        <p class="service-description">{{ 'SERVICES.WEBSITE.PLANS.BASIC.DESCRIPTION' | translate }}</p>
+        <ul class="service-features">
+          <li *ngFor="let feature of basicFeatures">{{ feature }}</li>
+        </ul>
+        <p class="service-price">{{ 'SERVICES.WEBSITE.PLANS.BASIC.PRICE' | translate }}</p>
+      </div>
+    </div>
+
+    <!-- Standard Website -->
+    <div class="service-card">
+      <div class="service-icon">
+        <img src="assets/businesswebsite.png" class="img-fluid" alt="Standard Website">
+      </div>
+      <div class="service-content">
+        <h3 class="service-title">{{ 'SERVICES.WEBSITE.PLANS.STANDARD.TITLE' | translate }}</h3>
+        <p class="service-description">{{ 'SERVICES.WEBSITE.PLANS.STANDARD.DESCRIPTION' | translate }}</p>
+        <ul class="service-features">
+          <li *ngFor="let feature of standardFeatures">{{ feature }}</li>
+        </ul>
+        <p class="service-price">{{ 'SERVICES.WEBSITE.PLANS.STANDARD.PRICE' | translate }}</p>
+      </div>
+    </div>
+
+    <!-- Premium Website -->
+    <div class="service-card">
+      <div class="service-icon">
+        <img src="assets/customwebsite.png" class="img-fluid" alt="Premium Website">
+      </div>
+      <div class="service-content">
+        <h3 class="service-title">{{ 'SERVICES.WEBSITE.PLANS.PREMIUM.TITLE' | translate }}</h3>
+        <p class="service-description">{{ 'SERVICES.WEBSITE.PLANS.PREMIUM.DESCRIPTION' | translate }}</p>
+        <ul class="service-features">
+          <li *ngFor="let feature of premiumFeatures">{{ feature }}</li>
+        </ul>
+        <p class="service-price">{{ 'SERVICES.WEBSITE.PLANS.PREMIUM.PRICE' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="container projects-section">
+  <h2 class="section-title text-center mb-5 fw-bold">{{ 'SERVICES.WEBSITE.PORTFOLIO.TITLE' | translate }}</h2>
+  <p class="section-description text-center mb-5">{{ 'SERVICES.WEBSITE.PORTFOLIO.DESCRIPTION' | translate }}</p>
+  <div class="projects-grid">
+    <ng-container *ngFor="let project of projects">
+      <div class="project-card">
+        <div class="project-image">
+          <img [src]="project.imageUrl" [alt]="project.name">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">{{ project.name }}</h3>
+          <p class="project-description">{{ project.description }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>{{ 'SERVICES.WEBSITE.CTA.TITLE' | translate }}</h2>
+      <p>{{ 'SERVICES.WEBSITE.CTA.DESCRIPTION' | translate }}</p>
+      <a href="https://calendly.com/profayra-z4c/30min" target="_blank" class="btn btn-primary mt-4 px-5 py-3">
+        {{ 'SERVICES.WEBSITE.CTA.BUTTON' | translate }}
+      </a>
+    </div>
+  </div>
+</section>

@@ -3,6 +3,7 @@
     "NAV": {
       "HOME": "Home",
       "PROJECTS": "Projects",
+      "WEBSITE": "Websites",
       "RESOURCES": "Resources",
       "CONTACT": "Contact"
     },
@@ -38,7 +39,7 @@
         "DESCRIPTION": "Learn programming in a personalized way with an expert tutor who adapts to your level and goals.",
         "FEATURES": ["Flexible schedules", "Focus on your needs"],
         "PRICE": "Price: Starting at $15 USD",
-        "BUTTON": "Learn More"
+        "BUTTON": "Book Now"
       },
       "OTHER_SERVICES": {
         "TITLE": "Other Services",
@@ -195,6 +196,77 @@
       "DESCRIPTION": "Subscribe to be the first to know when we publish new tutorials and resources.",
       "PLACEHOLDER": "Your email address",
       "BUTTON": "Subscribe"
+    }
+  },
+  "SERVICES": {
+    "WEBSITE": {
+      "HERO": {
+        "SUBTITLE": "Professional Web Development",
+        "TITLE": "Custom Websites That Convert",
+        "DESCRIPTION": "From simple landing pages to complex e-commerce solutions, we build websites that look great and drive results.",
+        "BUTTON": "Get Started Today"
+      },
+      "CONSULTATION": {
+        "TITLE": "Schedule a FREE Consultation",
+        "DESCRIPTION": "Get a personalized estimate and discover how we can help your business grow online.",
+        "BUTTON": "Book Free Session"
+      },
+      "PLANS": {
+        "TITLE": "Website Packages",
+        "DESCRIPTION": "Choose the perfect solution for your business needs and budget",
+        "BASIC": {
+          "TITLE": "Basic Website",
+          "DESCRIPTION": "Perfect for small businesses and professionals who need a simple, effective online presence.",
+          "FEATURES": [
+            "Up to 5 pages",
+            "Responsive design",
+            "Mobile responsive design",
+            "Basic SEO setup",
+            "Contact form",
+            "Social media integration"
+          ],
+          "PRICE": "Starting at $199",
+          "BUTTON": "Get Started"
+        },
+        "STANDARD": {
+          "TITLE": "Business Website",
+          "DESCRIPTION": "Ideal for growing businesses that need more functionality and custom features.",
+          "FEATURES": [
+            "Up to 10 pages",
+            "Custom design",
+            "Advanced SEO optimization",
+            "Blog/news section",
+            "Google Analytics integration",
+            "Basic content management system"
+          ],
+          "PRICE": "Starting at $399",
+          "BUTTON": "Most Popular"
+        },
+        "PREMIUM": {
+          "TITLE": "E-commerce / Custom",
+          "DESCRIPTION": "Full-featured solutions for businesses that need online selling capabilities or custom applications.",
+          "FEATURES": [
+            "Unlimited pages",
+            "E-commerce functionality",
+            "Payment gateway integration",
+            "Custom features & functionality",
+            "Advanced security",
+            "Premium support"
+          ],
+          "PRICE": "Starting at $999",
+          "BUTTON": "Request Quote"
+        }
+      },
+      "PORTFOLIO": {
+        "TITLE": "Our Website Projects",
+        "DESCRIPTION": "Take a look at some of the websites we've built for our clients",
+        "VIEW_ALL_BUTTON": "View All Projects"
+      },
+      "CTA": {
+        "TITLE": "Ready to Build Your Dream Website?",
+        "DESCRIPTION": "Let's discuss how we can help you stand out online and achieve your business goals.",
+        "BUTTON": "Schedule Free Consultation"
+      }
     }
   }
 }
