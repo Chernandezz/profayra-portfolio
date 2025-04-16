@@ -17,27 +17,27 @@
   },
   "HOME": {
     "HERO": {
-      "SUBTITLE": "Impulsa tu carrera con",
-      "TITLE": "Tutorías de Programación",
-      "DESCRIPTION": "Aprende con expertos y lleva tus habilidades al siguiente nivel",
-      "BUTTON": "Agendar Ahora"
+      "SUBTITLE": "Impulsa tu negocio con una",
+      "TITLE": "PÁGINA WEB PROFESIONAL",
+      "DESCRIPTION": "Desarrollo web y tutorías de programación",
+      "BUTTON": "Agendar ahora"
     },
     "SERVICES": {
       "TITLE": "Nuestros Servicios",
       "DESCRIPTION": "Soluciones personalizadas para todos los niveles y necesidades",
       "PERSONALIZED_TUTORING": {
+        "TITLE": "Página Web a Medida",
+        "DESCRIPTION": "Desde portafolios personales hasta sitios web empresariales, hacemos realidad tus ideas con diseño profesional y código limpio.",
+        "FEATURES": ["Adaptada a móviles", "Optimizada para SEO"],
+        "PRICE": "Precio: Desde $199 USD",
+        "BUTTON": "Leer más"
+      },
+      "STUDY_GROUP": {
         "TITLE": "Monitorías Personalizadas",
         "DESCRIPTION": "Aprende programación de manera personalizada con un tutor experto que se adapta a tu nivel y objetivos.",
         "FEATURES": ["Horarios flexibles", "Enfoque en tus necesidades"],
-        "PRICE": "Precio: $20 USD por sesión",
-        "BUTTON": "Reservar Sesión"
-      },
-      "STUDY_GROUP": {
-        "TITLE": "Grupo de Estudio",
-        "DESCRIPTION": "Aprende con tus amigos o compañeros de trabajo, repasa conceptos y resuelve dudas juntos con un tutor especializado.",
-        "FEATURES": ["Más de 1 participante", "Aprendizaje colaborativo"],
-        "PRICE": "Precio: $20 USD base + $10 por persona adicional",
-        "BUTTON": "Reservar Grupo"
+        "PRICE": "Precio: Desde $15 USD",
+        "BUTTON": "Leer más"
       },
       "OTHER_SERVICES": {
         "TITLE": "Otros Servicios",

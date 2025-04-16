@@ -17,27 +17,28 @@
   },
   "HOME": {
     "HERO": {
-      "SUBTITLE": "Boost your career with",
-      "TITLE": "Programming Tutoring",
-      "DESCRIPTION": "Learn from experts and take your skills to the next level",
-      "BUTTON": "Schedule Now"
+      "SUBTITLE": "Boost your business with a",
+      "TITLE": "Professional Website",
+      "DESCRIPTION": "Web development and programming tutoring",
+      "BUTTON": "Learn More"
     },
     "SERVICES": {
       "TITLE": "Our Services",
       "DESCRIPTION": "Customized solutions for all levels and needs",
+
       "PERSONALIZED_TUTORING": {
+        "TITLE": "Custom Website",
+        "DESCRIPTION": "From personal portfolios to full business sites, we bring your ideas to life with professional design and clean code.",
+        "FEATURES": ["Mobile-friendly", "SEO-ready"],
+        "PRICE": "Price: Starting at $199 USD",
+        "BUTTON": "Learn More"
+      },
+      "STUDY_GROUP": {
         "TITLE": "Personalized Tutoring",
         "DESCRIPTION": "Learn programming in a personalized way with an expert tutor who adapts to your level and goals.",
         "FEATURES": ["Flexible schedules", "Focus on your needs"],
-        "PRICE": "Price: $20 USD per session",
-        "BUTTON": "Book a Session"
-      },
-      "STUDY_GROUP": {
-        "TITLE": "Study Group",
-        "DESCRIPTION": "Learn with your friends or coworkers, review concepts, and solve doubts together with a specialized tutor.",
-        "FEATURES": ["More than 1 participant", "Collaborative learning"],
-        "PRICE": "Price: $20 USD base + $10 per additional person",
-        "BUTTON": "Book Group"
+        "PRICE": "Price: Starting at $15 USD",
+        "BUTTON": "Learn More"
       },
       "OTHER_SERVICES": {
         "TITLE": "Other Services",
@@ -165,7 +166,7 @@
       }
     },
     "TESTIMONIALS": {
-      "TITLE": "What our students say",
+      "TITLE": "What our customers say",
       "REVIEWS": [
         {
           "TEXT": "The tutoring sessions helped me understand complex programming concepts that I couldn't grasp in class.",
