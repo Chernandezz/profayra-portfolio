@@ -35,15 +35,14 @@ export function initializeTranslations(
 ) {
   return () => {
     translate.addLangs(['en', 'es']);
-    translate.setDefaultLang('es');
+    translate.setDefaultLang('en');
 
     if (isPlatformBrowser(platformId)) {
       const browserLang = translate.getBrowserLang();
-      const langToUse = browserLang?.match(/en|es/) ? browserLang : 'es';
+      const langToUse = browserLang?.match(/en|es/) ? browserLang : 'en';
       translate.use(langToUse);
     } else {
-      // En el servidor, simplemente usa el idioma predeterminado
-      translate.use('es');
+      translate.use('en');
     }
 
     // Usa firstValueFrom en lugar de toPromise
@@ -54,7 +53,7 @@ export function initializeTranslations(
 export function provideTranslations() {
   return makeEnvironmentProviders([
     TranslateModule.forRoot({
-      defaultLanguage: 'es',
+      defaultLanguage: 'en',
       isolate: false,
       loader: {
         provide: TranslateLoader,
